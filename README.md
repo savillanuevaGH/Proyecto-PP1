@@ -11,6 +11,7 @@ Este proyecto es una aplicación web que incluye un frontend en HTML, CSS y Java
   - [Configuración de la Base de Datos](#configuración-de-la-base-de-datos)
   - [Ejecución del Proyecto](#ejecución-del-proyecto)
   - [Uso](#uso)
+  - [Implementaciones a futuro](#implementaciones-a-futuro)
 
 ## Requisitos
 
@@ -98,3 +99,9 @@ Una vez que el backend y el frontend estén en ejecución:
 
 - Accede a la aplicación desde `http://localhost:8080` o donde esté configurado el frontend.
 - La aplicación se comunicará con el backend a través de peticiones HTTP (por ejemplo, usando `fetch` en el JavaScript del frontend).
+
+## Implementaciones a futuro
+* Cambiar el producto de un dia por otro (UPDATE pedido)
+* Editar perfil de Usuario
+* Cambiar atributos de un Producto
+* Dar de baja a un usuario
