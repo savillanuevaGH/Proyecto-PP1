@@ -28,8 +28,7 @@ Asegúrate de tener instalados los siguientes programas:
 1. **Clona el repositorio del proyecto**:
 
     ```bash
-    git clone https://github.com/usuario/proyecto.git
-    cd proyecto
+    git clone https://github.com/savillanuevaGH/Proyecto-PP1
     ```
 
 2. **Configura el backend**:
@@ -63,8 +62,7 @@ Asegúrate de tener instalados los siguientes programas:
 
      ```properties
         spring.application.name=orderSheduler
-        spring.datasource.url=jdbc:mysql://localhost:3306/
-        order_scheduler?useSSL=false&serverTimezone=UTC
+        spring.datasource.url=jdbc:mysql://localhost:3306/order_scheduler?useSSL=false&serverTimezone=UTC
         spring.datasource.username=root
         spring.datasource.password=
 
