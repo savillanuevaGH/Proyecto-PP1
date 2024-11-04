@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/pages/profile.css">
+    <script src="/js/profile.js" defer></script>
+    <link rel="shortcut icon" href="../public/orderSchedulerIcon.png" type="image/x-icon">
+    <title>orderScheduler - Mi Perfil</title>
+</head>
+<body>
+    <header-component></header-component>
+    <main>
+        <fieldset class="container">
+            <!-- Info  del usuario -->
+            <legend><h3>Perfil de usuario</h3></legend>
+            
+             <div class="item">
+                <!-- Nombre del usuario -->
+                <p id="username">Nombre de usuario: </p><input type="text" id="username-value" value="" readonly> 
+             </div>
+             <div class="item">
+                <!-- Email del usuario -->
+                <p id="user-email">Correo Electrónico: </p><input type="email" id="user-email-value" value="" readonly>
+             </div>
+             <div class="item">
+               <!-- Contraseña -->
+                <p id="user-password">Contraseña: </p><input type="password" id="user-password-value" value="" readonly>
+             </div>
+             <div class="item">
+                <!-- N° de Documento -->
+                <p>N° de Documento (DNI): </p><input type="number" id="user-dni-value" value="" readonly maxlength="8">
+             </div>
+             <!-- Botón para editar -->
+             <button id="edit-btn">Editar</button>
+             <!-- Botón de guardar cambios (oculto por defecto) -->
+             <button id="save-btn" style="display: none;">Guardar cambios</button>
+            </fieldset>
+
+            <div class="item">
+               <!-- Consultar historial de pedidos -->
+               <button id="openHistoryModalBtn"><strong style="font-weight: bolder; font-size: larger; color: darkslategrey;">☰ </strong>Ver Historial</button>
+            </div>
+    </main>
+    <!-- Modal para ver el historial de pedidos -->
+    <div id="historyModal" class="modal">
+        <div class="modal-content">
+          <span class="close-history" id="close-history">&times;</span>
+          <h4>Historial de Pedidos</h4>
+          <div id="history-container"></div>
+        </div>
+      </div>
+</body>
+</html>

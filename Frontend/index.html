@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/products.css">
+    <script src="/js/index.js" defer></script>
+    <link rel="shortcut icon" href="./public/orderSchedulerIcon.png" type="image/x-icon">
+    <title>orderScheduler - Inicio</title>
+  </head>
+  <body>
+      <header-component></header-component>
+      <main>
+        <!-- Sección que muestra el plato/platos que está/n ese dia -->
+        <section id="daily-product">
+          <h4>Plato de Hoy <span id="today"></span></h4>
+          <div class="daily-product" id="daily-product-container">
+            
+          </div>
+        </section>
+        
+        <!-- Contenedor para renderizar los productos -->
+        <div class="week-products">
+          <section class="products">
+            <h5>Productos</h5>
+            <div class="products-container" id="products-container"></div>
+          </section>
+        </div>
+      </main>
+  
+      <!-- Modal para agregar productos -->
+      <div id="week-day-modal" class="modal">
+        <div class="modal-content">
+          <span id="close-modal" class="close">&times;</span>
+          <h3>Agregar producto</h3>
+          <label for="week-select">Selecciona la semana:</label>
+          <select id="week-select">
+            <option value="1">Semana 1</option>
+            <option value="2">Semana 2</option>
+            <option value="3">Semana 3</option>
+            <option value="4">Semana 4</option>
+          </select>
+    
+          <label for="day-select">Selecciona el día:</label>
+          <select id="day-select">
+            <option value="Lunes">Lunes</option>
+            <option value="Martes">Martes</option>
+            <option value="Miércoles">Miércoles</option>
+            <option value="Jueves">Jueves</option>
+            <option value="Viernes">Viernes</option>
+          </select>
+          
+          <h5 style="font-weight: 900; font-size: .9em;">Observacion</h5>
+          <textarea type="text" name="observacion" id="observation" placeholder="Agregar un comentario"></textarea>
+          
+          <div class="buttons">
+            <button id="add-favorite-button" class="addFavoriteBtn">
+              <span class="material-symbols-outlined">favorite</span>
+            </button>
+            <button id="add-product-button">Agregar Producto</button>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>

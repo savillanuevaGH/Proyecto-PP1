@@ -1,0 +1,111 @@
+@import url('../style.css');
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  align-items: center;
+  justify-content: center;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.register {
+  margin: 1rem;
+  margin-bottom: 0;
+  padding: 1.4rem;
+  height: fit-content;
+  width: auto;
+  border-radius: 25px;
+
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 600;
+
+  border: none;
+  background-color: var(--clr-mustard);
+}
+
+legend {
+  padding: 10px 20px;
+  font-size: 1.3rem;
+  font-weight: 800;
+
+  border-radius: 5px;
+  background-color: var(--clr-mustard);
+}
+
+h5 {
+  font-size: .9em;
+}
+
+.register-item {
+  margin-block: 4px;
+  padding-block: 4px;
+}
+
+input {
+  padding: .5rem;
+  width: 90%;
+
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(251, 189, 5, 0.8);
+
+  &::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+  }
+}
+
+#terminos {
+  width: inherit;
+}
+
+label {
+  margin-inline: 10px;
+  font-size: 1.1em;
+  font-weight: 700;
+}
+
+select {
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(251, 189, 5, 0.8);
+  padding: .2rem;
+}
+
+#register-button, #login-button {
+  padding: .6rem;
+  border-radius: .5rem;
+
+  background-color: var(--clr-varblue);
+  box-shadow: 2px 2px 5px var(--clr-varblue);
+
+  &:hover {
+    background-color: #366cc4;
+    box-shadow: 2px 2px 6px #152b4e;
+  }
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--clr-varblue);
+
+  &:hover {
+    color: #366cc4;
+  }
+}

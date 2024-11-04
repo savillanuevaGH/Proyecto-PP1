@@ -1,0 +1,68 @@
+.daily-product {
+    width: 100%;
+    height: max-content;
+
+    background-color: rgba(0, 0, 0, .5);
+}
+
+#daily-product h4 {
+    width: 100%;
+    height: max-content;
+    padding: .3em;
+    font-size: larger;
+    text-align: justify;
+
+    color: var(--clr-tomato);
+    background-color: rgba(255, 99, 71, .2);
+    text-shadow: 1px 1px 2px black, -1px 1px 2px black;
+}
+
+#daily-product h4 span {
+    border-radius: 5px;
+    background-color: rgba(255, 99, 71, .1);
+}
+
+.week-products {
+    display: grid;
+    grid-template-rows: auto;
+    grid-auto-rows: minmax(min-content, max-content);
+    gap: 1rem;
+}
+
+section {
+    min-height: 0;
+
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.products {
+    height: max-content;
+}
+
+section h5 {
+    padding: 5px;
+    font-size: large;
+
+    color: var(--clr-l-green);
+    text-shadow: 1px 1px 2px black, -1px 1px 2px black;
+    background-color: rgba(52, 168, 83, .2);
+}
+
+.products-container, .daily-product {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-rows: minmax(220px, auto);
+    gap: .5rem;
+    padding: .5rem;
+    justify-items: center;
+}
+
+.products-container {
+    background-color: rgba(0, 0, 0, .3);
+}
+
+@media (max-width: 768px) {
+    .products-container, .daily-product {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Cambia el tamaño mínimo de las columnas */
+    }
+}

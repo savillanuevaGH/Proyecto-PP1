@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/pages/register.css"/>
+    <link rel="shortcut icon" href="../public/orderSchedulerIcon.png" type="image/x-icon">
+    <title>orderScheduler - Registrar Usuario</title>
+  </head>
+  <style>
+    .fade-in {
+      animation: fadeIn .6s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+  <body>
+    <header-component></header-component>
+    <main>
+      <fieldset id="register-section" class="register" hidden>
+        <legend>Crear cuenta de Usuario</legend>
+        <h5>Ingrese los datos para crear su cuenta.</h5>
+        <form id="register-form">
+          <div class="register-item">
+            <input
+              type="email"
+              id="register-email"
+              placeholder="Correo Electrónico"
+              required
+            />
+          </div>
+          <div class="register-item">
+            <input
+              type="password"
+              id="register-password"
+              placeholder="Contraseña"
+              required
+            />
+          </div>
+          <div class="register-item">
+            <input
+              type="password"
+              id="confirm-password"
+              placeholder="Ingrese nuevamente su contraseña"
+              required
+            />
+          </div>
+          <div class="register-item">
+            <input
+              type="text"
+              id="register-name"
+              name="nombre"
+              placeholder="Nombre"
+              required
+            />
+          </div>
+          <div class="register-item">
+            <input
+              type="text"
+              id="register-dni"
+              name="documento"
+              placeholder="Documento"
+              required
+            />
+          </div>
+          <div class="register-item">
+            <label for="terminos">
+              <input type="checkbox" id="terminos" name="terminos" required />
+              Acepto los Términos y Condiciones
+            </label>
+          </div>
+          <button type="button" id="register-button">Registrar</button>
+        </form>
+        <div class="register-item">
+          <a class="register-item" id="register-a"
+            >¿Ya tienes cuenta? Toca aquí para ingresar.</a
+          >
+        </div>
+      </fieldset>
+
+      <fieldset id="login-section" class="register" hidden>
+        <legend>Entrar en su Cuenta</legend>
+        <h5>Ingrese los datos de su cuenta para ingresar.</h5>
+        <form id="register-form">
+          <div class="register-item">
+            <input
+              type="email"
+              id="login-email"
+              placeholder="Correo Electrónico"
+              required
+            />
+          </div>
+          <div class="register-item">
+            <input
+              type="password"
+              id="login-password"
+              placeholder="Contraseña"
+              required
+            />
+          </div>
+          <button type="button" id="login-button">Entrar</button>
+        </form>
+        <div class="register-item">
+          <a class="register-item" id="login-a"
+            >¿No tienes cuenta? Toca aqui para crear una.</a
+          >
+        </div>
+      </fieldset>
+    </main>
+    <script src="/js/register.js" defer></script>
+  </body>
+</html>
